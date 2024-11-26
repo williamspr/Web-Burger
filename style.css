@@ -1,0 +1,509 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@100..900&display=swap");
+*{
+	margin: 0;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: hsl(34, 100%, 92%);
+	padding-bottom: 17.5px;
+	z-index: 999;
+}
+
+.berbayang{
+	box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.1);
+}
+nav{
+	padding-right: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	font-family: "Aclonica", sans-serif;
+}
+
+#logo-burger{
+	margin-left: 170px;
+	display: flex;
+}
+
+nav div{
+	background-color: hsl(45, 99%, 55%);
+	padding: 6px;
+	width: 20px;
+	height: 20px;
+	border-radius: 8px;
+	position: relative;
+	top: -7px;
+	margin-right: 10px;
+}
+nav img{
+	width: 20px;
+}
+
+nav ul{
+	margin-right: 85px;
+}
+ul li{
+	display: inline;
+	margin-left: 50px;
+	position: relative;
+}
+
+ul li a::before{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: hsl(45, 99%, 55%);
+	position: absolute;
+	top: 20px;
+	transition: width 0.3s ease;
+}
+
+ul li a:hover::before{
+	width: 60%;
+}
+
+.link-aktif::before{
+	content: "";
+	width: 60%;
+	height: 3px;
+	background-color: hsl(45, 99%, 55%);
+	position: absolute;
+	top: 20px;
+}
+
+a.link-nav{
+	text-decoration: none;
+	color: hsl(22, 100%, 8%);
+}
+
+main{
+	padding-top: 180px;
+	background-color: hsl(34, 100%, 92%);
+}
+
+#home{
+	display: flex;
+}
+
+#home-desc{
+	margin-left: 30px;
+}
+#home-desc h1{
+	font-size: 64px;
+	font-family: "Aclonica", sans-serif;
+	color: hsl(22, 100%, 8%);
+}
+
+#home-desc p{
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	color: hsl(22, 24%, 32%);
+}
+
+#home-desc img{
+	width: 60px;
+	rotate: 15deg;
+	opacity: 0.5;
+	margin-top: 30px;
+	margin-left: 120px;
+}
+
+#home-desc button{
+	font-family: "Aclonica", sans-serif;
+	background-color: hsl(45, 99%, 55%);
+	border-radius: 64px;
+	border: none;
+	padding: 16px 34px;
+	transition: box-shadow 0.4s;
+	margin-left: -235px;
+	margin-top: -30px;
+}
+
+#home-desc button:hover{
+	box-shadow: 0 8px 24px hsla(22, 100%, 8%, 0.2);
+}
+
+#home-desc, #home-burger {
+    flex-basis: 80%; /* Bagilah ruang secara proporsional */
+    display: flex;
+    flex-direction: column; /* Jika kamu ingin konten vertikal dalam setiap bagian */
+    align-items: center; /* Opsional: agar konten di setiap bagian dipusatkan */
+}
+
+#home-burger #burger{
+	width: 420px;
+	margin-right: 200px;
+	margin-top: -40px;
+	z-index: 2;
+}
+
+#home-burger .home-ingredient{
+	width: 80px;
+}
+
+#home-burger #dish{
+	margin-top: 280px;
+	margin-right: 200px;
+	width: 480px;
+	z-index: 1;
+}
+
+#burger, #dish{
+	position: absolute;
+}
+
+.home-ingredient{
+	z-index: 3;
+}
+
+#kentang2{
+	margin-top: 255px; 
+	margin-left: 170px; 
+	rotate: 90deg;
+	position: absolute;
+}
+
+#tomat1{
+	margin-top: -175px;
+	margin-left: -120px;
+}
+
+#tomat2{
+	margin-top: 285px;
+	margin-left: -255px;
+	position: absolute;
+}
+
+#selada1{
+	transform: scaleX(-1);
+	margin-left: 230px;
+}
+
+#selada2{
+	margin-top: 125px;
+	margin-left: -620px;
+}
+
+#recipe{
+	padding-top: 150px;
+	padding-bottom: 75px;
+}
+
+#recipe h2, #popular h2, footer h2{
+	font-family: "Aclonica", sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+#recipe-burger{
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+#recipe-burger img{
+	max-height: 520px;
+	width: 280px;
+}
+
+.ganjil, .genap{
+	display: flex;
+	margin-bottom: 4px;
+}
+
+.ganjil .template-single-ingredient{
+	margin-right: 15px;
+}
+
+.template-single-ingredient{
+	background-color: hsl(45, 99%, 55%);
+	border-radius: 18px;
+	padding: 10.5px 7px;
+	border: 3px solid white;
+}
+
+#single-ingredient1{
+	height: 47.5px;
+	width: 65px !important;
+}
+
+#single-ingredient2{
+	height: 50px;
+	width: 66.5px !important;
+}
+
+#single-ingredient3{
+	height: 52px;
+	width: 65px !important;
+}
+
+#single-ingredient4{
+	width: 72px !important;
+}
+
+#single-ingredient5{
+	height: 54px;
+	width: 66px !important;
+}
+
+#bahan-bahan{
+	margin-left: 110px;
+}
+
+#bahan-bahan h3{
+	margin-top: 10px;
+	font-family: "Aclonica", sans-serif;
+	font-weight: normal;
+}
+
+#bahan-bahan p{
+	margin-top: 5px;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+}
+
+#popular{
+	background-color: hsl(34, 100%, 88%);
+	padding: 95px 215px 60px;
+}
+
+#menu{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 70px;
+	justify-content: center;
+	margin-top: 95px;
+}
+
+.daftar-menu{
+	width: 200px;
+	background-color: hsl(45, 99%, 55%);
+	border: 3px solid white;
+	border-radius: 20px;
+}
+
+.daftar-menu img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -45px;
+	width: 165px;
+}
+
+.daftar-menu h3{
+	font-family: "Aclonica", sans-serif;
+	font-weight: normal;
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.daftar-menu div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.harga{
+	text-align: left !important; 
+	margin-left: 20px;
+}
+
+.daftar-menu div button{
+	background-color: hsl(22, 100%, 8%);
+	color: hsl(34, 100%, 96%);
+	border: none;
+	border-radius: 8px;
+	padding: 4.5px 5px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+#delivery{
+	padding: 110px 180px 65px;
+	padding-top: 110px;
+}
+
+#delivery-container{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#delivery-desc h2, #delivery-desc a{
+	font-family: "Aclonica", sans-serif;
+}
+
+#delivery-desc h2{
+	margin-top: 15px;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#delivery-desc p{
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+
+#delivery-desc img{
+	width: 40px !important;
+	rotate: 15deg;
+	opacity: 0.5;
+	position: absolute;
+	margin-top: -105px;
+	margin-left: 220px;
+}
+
+#delivery-desc a{
+	font-size: 14px;
+	text-decoration: none;
+	color: hsl(22, 100%, 8%);
+	background-color: hsl(45, 99%, 55%);
+	padding: 12px 17px;
+	border-radius: 64px;
+}
+
+#delivery-container img{
+	height: 300px;
+	width: 365px;
+}
+
+#contact{
+	padding: 65px 150px 110px;
+	color: white;
+}
+
+#contact h2{
+	font-family: "Aclonica", sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 28px;
+}
+
+#contact-container{
+	background-color: hsl(22, 100%, 8%);
+	border: none;
+	border-radius: 64px;
+	padding-top: 70px;
+	height: 375px;
+}
+
+#sticker-burger{
+	position: absolute;
+	width: 58px;
+	opacity: 0.5;
+	margin-left: 400px;
+}
+
+#konten-kontak{
+	display: flex;
+	padding-left: 120px;
+	padding-right: 70px;
+}
+
+#konten-kontak img{
+	height: 290px;
+	width: 320px;
+}
+
+#konten-kontak #konten-kontak-desc{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#konten-kontak div .utama{
+	font-family: "Aclonica", sans-serif;
+	font-size: 17px;
+}
+
+#ikon{
+	width: 105px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#ikon a{
+	text-decoration: none;
+	font-size: 19px;
+	padding: 3.5px;
+	height: 20px;
+	width: 20px;
+	background-color: hsl(45, 99%, 55%);
+	color: hsl(22, 100%, 8%);
+	border-radius: 8px;
+	transition: bottom .4s, transform .4s;
+}
+
+#ikon a:hover{
+	transform: translateY(-4px);
+}
+
+#konten-kontak div p{
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+
+#konten-kontak #sticker-soda{
+	width: 35px;
+	opacity: 0.5;
+}
+
+footer{
+	padding: 0 150px 40px;
+	background-color: hsl(34, 100%, 92%);
+}
+
+#footer-content{
+	display: flex;
+	justify-content: space-between;
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+}
+
+#footer-content div{
+	display: flex;
+	justify-content: space-between;
+	gap: 11px;
+	margin-right: 48px;
+}
+
+#footer-content div a{
+	text-decoration: none;
+	font-size: 19px;
+	padding: 1px 3px;
+	background-color: hsl(45, 99%, 55%);
+	color: hsl(22, 100%, 8%);
+	border-radius: 8px;
+	transition: bottom .4s, transform .4s;
+}
+
+#footer-content div a:hover{
+	transform: translateY(-4px);
+}
+
+footer span{
+	font-family: "Montserrat", sans-serif;
+	font-size: 11px;
+	display: block;
+	text-align: center;
+}
+
+#arrow-up{
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	color: hsl(22, 100%, 8%);
+	padding: 6px;
+	font-size: 20px;
+	text-decoration: none;
+	border-radius: 5.6px;
+	box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
+	transition: bottom .4s, transform .4s;
+}
+
+#arrow-up:hover{
+	transform: translateY(-8px);
+}
